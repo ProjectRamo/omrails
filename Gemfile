@@ -49,6 +49,7 @@ end
 
 gem 'devise', '~> 3.2.4'
 gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk', '~> 1.38.0'
 
 group :development, :test do
      gem 'sqlite3'
