@@ -1,0 +1,103 @@
+2014-05-24T22:26:27.801481+00:00 app[web.1]: ActionView::Template::Error (missing required :bucket option):
+2014-05-24T22:26:27.801483+00:00 app[web.1]:     14:   <tbody>
+2014-05-24T22:26:27.801498+00:00 app[web.1]: 
+2014-05-24T22:26:27.801485+00:00 app[web.1]:     15:     <% @pins.each do |pin| %>
+2014-05-24T22:26:27.801499+00:00 app[web.1]: 
+2014-05-24T22:26:27.707927+00:00 app[web.1]:     19: 	<td><%= pin.user.email if pin.user %></td>
+2014-05-24T22:26:27.801486+00:00 app[web.1]:     16:       <tr>
+2014-05-24T22:26:27.801488+00:00 app[web.1]:     17: 	<td><%= image_tag pin.image.url(:thumb) %></td>
+2014-05-24T22:26:27.801489+00:00 app[web.1]:     18:         <td><%= pin.description %></td>
+2014-05-24T22:26:27.801491+00:00 app[web.1]:     19: 	<td><%= pin.user.email if pin.user %></td>
+2014-05-24T22:26:27.809431+00:00 app[web.1]:     14:   <tbody>
+2014-05-24T22:26:27.707932+00:00 app[web.1]:   app/views/pins/index.html.erb:17:in `block in _app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:26:27.801492+00:00 app[web.1]:     20:         <td><%= link_to 'Show', pin %></td>
+2014-05-24T22:26:27.809422+00:00 app[web.1]: 
+2014-05-24T22:26:27.707933+00:00 app[web.1]:   app/views/pins/index.html.erb:15:in `_app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:26:27.801494+00:00 app[web.1]:   app/views/pins/index.html.erb:17:in `block in _app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:26:27.809429+00:00 app[web.1]: ActionView::Template::Error (missing required :bucket option):
+2014-05-24T22:26:27.801496+00
+:00 app[web.1]:   app/views/pins/index.html.erb:15:in `_app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:26:27.809434+00:00 app[web.1]:     16:       <tr>
+2014-05-24T22:26:27.809433+00:00 app[web.1]:     15:     <% @pins.each do |pin| %>
+2014-05-24T22:26:27.809439+00:00 app[web.1]:     19: 	<td><%= pin.user.email if pin.user %></td>
+2014-05-24T22:26:27.809443+00:00 app[web.1]:   app/views/pins/index.html.erb:17:in `block in _app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:26:27.809436+00:00 app[web.1]:     17: 	<td><%= image_tag pin.image.url(:thumb) %></td>
+2014-05-24T22:26:27.809446+00:00 app[web.1]: 
+2014-05-24T22:26:27.779545+00:00 app[web.1]: Started GET "/pins" for 107.1.159.138 at 2014-05-24 22:26:27 +0000
+2014-05-24T22:26:27.809437+00:00 app[web.1]:     18:         <td><%= pin.description %></td>
+2014-05-24T22:26:27.787436+00:00 app[web.1]: Processing by PinsController#index as HTML
+2014-05-24T22:26:27.809441+00:00 app[web.1]:     20:         <td><%= link_to 'Show', pin %></td>
+2014-05-24T22:26:27.707934+00:00 app[web.1]: 
+2014-05-24T22:26:27.809445+00:00 app[web.1]:   app/views/pins/index.html.erb:15:in `_app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:26:27.779538+00:00 app[web.1]: Started GET "/pins" for 107.1.159.138 at 2014-05-24 22:26:27 +0000
+2014-05-24T22:26:27.809448+00:00 app[web.1]: 
+2014-05-24T22:26:28.058816+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=omrails2014.herokuapp.com request_id=3f5b20c9-06db-4776-a83f-1c219f95341a fwd="10.240.212.42, 107.1.159.138" dyno=web.1 connect=2ms service=7ms status=304 bytes=133
+2014-05-24T22:37:11.769323+00:00 heroku[router]: at=info method=GET path=/ host=omrails2014.herokuapp.com request_id=06faa008-5af4-4f2c-89bc-8f572b1e15be fwd="10.240.212.42, 23.25.20.209" dyno=web.1 connect=3ms service=44ms status=200 bytes=2854
+2014-05-24T22:37:11.916390+00:00 heroku[router]: at=info method=GET path=/assets/application-ec41336ef053da34eb73ffa290c08327.css host=omrails2014.herokuapp.com request_id=6e2ce351-defc-4e87-8dd6-95cfffb3fc1d fwd="10.240.212.42, 23.25.20.209" dyno=web.1 connect=1ms service=5ms status=304 bytes=133
+2014-05-24T22:37:11.756240+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (12.2ms)
+2014-05-24T22:37:11.758058+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 2.9ms)
+2014-05-24T22:37:11.730796+00:00 app[web.1]: Started GET "/" for 23.25.20.209 at 2014-05-24 22:37:11 +0000
+2014-05-24T22:37:11.757656+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.5ms)
+2014-05-24T22:37:11.757663+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.5ms)
+2014-05-24T22:37:11.742458+00:00 app[web.1]: Processing by PagesController#home as HTML
+2014-05-24T22:37:11.742467+00:00 app[web.1]: Processing by PagesController#home as HTML
+2014-05-24T22:37:11.756230+00:00 app[web.1]:   Rendered pages/home.html.erb within layouts/application (12.2ms)
+2014-05-24T22:37:11.758053+00:00 app[web.1]: Completed 200 OK in 15ms (Views: 11.8ms | ActiveRecord: 2.9ms)
+2014-05-24T22:37:11.730786+00:00 app[web.1]: Started GET "/" for 23.25.20.209 at 2014-05-24 22:37:11 +0000
+2014-05-24T22:37:12.170918+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=omrails2014.herokuapp.com request_id=3ef994c9-fb18-4a04-8c9d-2976fb005ddf fwd="10.240.212.42, 23.25.20.209" dyno=web.1 connect=0ms service=10ms status=304 bytes=133
+2014-05-24T22:37:46.039336+00:00 heroku[router]: at=info method=GET path=/pins host=omrails2014.herokuapp.com request_id=0202077c-0d1b-4b7e-b4f2-cbb2052459fc fwd="10.240.212.42, 23.25.20.209" dyno=web.1 connect=1ms service=16ms status=500 bytes=1543
+2014-05-24T22:37:46.036222+00:00 app[web.1]:   Rendered pins/index.html.erb within layouts/application (4.1ms)
+2014-05-24T22:37:46.036383+00:00 app[web.1]: Completed 500 Internal Server Error in 5ms
+2014-05-24T22:37:46.036378+00:00 app[web.1]: Completed 500 Internal Server Error in 5ms
+2014-05-24T22:37:46.038073+00:00 app[web.1]: 
+2014-05-24T22:37:46.038078+00:00 app[web.1]: ActionView::Template::Error (missing required :bucket option):
+2014-05-24T22:37:46.038081+00:00 app[web.1]:     14:   <tbody>
+2014-05-24T22:37:46.038083+00:00 app[web.1]:     15:     <% @pins.each do |pin| %>
+2014-05-24T22:37:46.038085+00:00 app[web.1]:     16:       <tr>
+2014-05-24T22:37:46.038087+00:00 app[web.1]:     17: 	<td><%= image_tag pin.image.url(:thumb) %></td>
+2014-05-24T22:37:46.038089+00:00 app[web.1]:     18:         <td><%= pin.descripti
+on %></td>
+2014-05-24T22:37:46.038091+00:00 app[web.1]:     19: 	<td><%= pin.user.email if pin.user %></td>
+2014-05-24T22:37:46.038093+00:00 app[web.1]:     20:         <td><%= link_to 'Show', pin %></td>
+2014-05-24T22:37:46.038095+00:00 app[web.1]:   app/views/pins/index.html.erb:17:in `block in _app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:37:46.038098+00:00 app[web.1]:   app/views/pins/index.html.erb:15:in `_app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:37:46.038108+00:00 app[web.1]: 
+2014-05-24T22:37:46.038111+00:00 app[web.1]: ActionView::Template::Error (missing required :bucket option):
+2014-05-24T22:37:46.038113+00:00 app[web.1]:     14:   <tbody>
+2014-05-24T22:37:46.038115+00:00 app[web.1]:     15:     <% @pins.each do |pin| %>
+2014-05-24T22:37:46.038117+00:00 app[web.1]:     16:       <tr>
+2014-05-24T22:37:46.038119+00:00 app[web.1]:     17: 	<td><%= image_tag pin.image.url(:thumb) %></td>
+2014-05-24T22:37:46.038121+00:00 app[web.1]:     18:         <td><%= pin.description %></td>
+2014-05-24T22:37:46.038123+00:00 app[web.1]:     19: 	<td><%= pin.user.email if pin.user %></td>
+2014-05-24T22:37:46.038125+00:00 app[web.1]:     20:         <td><%= link_to 'Show', pin %></td>
+2014-05-24T22:37:46.038128+00:00 app[web.1]:   app/views/pins/index.html.erb:17:in `block in _app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:37:46.038130+00:00 app[web.1]:   app/views/pins/index.html.erb:15:in `_app_views_pins_index_html_erb___1622476518996958788_70119389578000'
+2014-05-24T22:37:46.038153+00:00 app[web.1]: 
+2014-05-24T22:37:46.038155+00:00 app[web.1]: 
+2014-05-24T22:37:46.038099+00:00 app[web.1]: 
+2014-05-24T22:37:46.038101+00:00 app[web.1]: 
+2014-05-24T22:37:46.026684+00:00 app[web.1]: Started GET "/pins" for 23.25.20.209 at 2014-05-24 22:37:46 +0000
+2014-05-24T22:37:46.026697+00:00 app[web.1]: Started GET "/pins" for 23.25.20.209 at 2014-05-24 22:37:46 +0000
+2014-05-24T22:37:46.030842+00:00 app[web.1]: Processing by PinsController#index as HTML
+2014-05-24T22:37:46.030858+00:00 app[web.1]: Processing by PinsController#index as HTML
+2014-05-24T22:37:46.036211+00:00 app[web.1]:   Rendered pins/index.html.erb within layouts/application (4.1ms)
+2014-05-24T23:40:40.067574+00:00 heroku[web.1]: State changed from up to down
+2014-05-24T23:40:40.066937+00:00 heroku[web.1]: Idling
+2014-05-24T23:40:44.030219+00:00 app[web.1]: [2014-05-24 23:40:44] FATAL SignalException: SIGTERM
+2014-05-24T23:40:44.030227+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `select'
+2014-05-24T23:40:44.030232+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:32:in `start'
+2014-05-24T23:40:44.030235+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/handler/webrick.rb:14:in `run'
+2014-05-24T23:40:44.030229+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:170:in `block in start'
+2014-05-24T23:40:44.030234+00:00 app[web.1]: 	/app/vendor/ruby-2.0.0/lib/ruby/2.0.0/webrick/server.rb:160:in `start'
+2014-05-24T23:40:44.030237+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/rack-1.5.2/lib/rack/server.rb:264:in `start'
+2014-05-24T23:40:44.030245+00:00 app[web.1]: 	bin/rails:4:in `require'
+2014-05-24T23:40:44.030243+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.0.4/lib/rails/commands.rb:71:in `<top (required)>'
+2014-05-24T23:40:44.030238+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.0.4/lib/rails/commands/server.rb:84:in `start'
+2014-05-24T23:40:44.030240+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.0.4/lib/rails/commands.rb:76:in `block in <top (required)>'
+2014-05-24T23:40:44.032066+00:00 app[web.1]: Exiting
+2014-05-24T23:40:44.030242+00:00 app[web.1]: 	/app/vendor/bundle/ruby/2.0.0/gems/railties-4.0.4/lib/rails/commands.rb:71:in `tap'
+2014-05-24T23:40:44.031626+00:00 app[web.1]: [2014-05-24 23:40:44] INFO  going to shutdown ...
+2014-05-24T23:40:44.031948+00:00 app[web.1]: [2014-05-24 23:40:44] INFO  WEBrick::HTTPServer#start done.
+2014-05-24T23:40:44.030247+00:00 app[web.1]: 	bin/rails:4:in `<main>'
+2014-05-24T23:40:43.241745+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2014-05-24T23:40:45.958967+00:00 heroku[web.1]: Process exited with status 143
