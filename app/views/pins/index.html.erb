@@ -12,10 +12,14 @@
 	      <span class="glyphicon glyphicon-edit"> Edit
 	    <% end %>
             <%= link_to pin, method: :delete, data: { confirm: 'Are you sure?' } do%>
-	      <span class="glyphicon glyphicon-trash"> Edit
+	      <span class="glyphicon glyphicon-trash"> Delete
 	    <% end %>
 	  <% end %>
 	</div>
      </div>
     <% end %>
+</div>
+
+<div class = "center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
 </div>
