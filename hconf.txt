@@ -1,9 +1,0 @@
-=== omrails2014 Config Vars
-AWS_ACCESS_KEY_ID:              AKIAI7GYCP7IZ3HFSPWA
-AWS_BUCKET:                     omrails2014
-AWS_SECRET_ACCESS_KEY:          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
-DATABASE_URL:                   postgres://eggqpwhfxllbqm:-RRupgk287-1kk0UfmqWoG842A@ec2-23-21-243-117.compute-1.amazonaws.com:5432/dafsvnol4k9siu
-HEROKU_POSTGRESQL_CHARCOAL_URL: postgres://eggqpwhfxllbqm:-RRupgk287-1kk0UfmqWoG842A@ec2-23-21-243-117.compute-1.amazonaws.com:5432/dafsvnol4k9siu
-LANG:                           en_US.UTF-8
-RACK_ENV:                       production
-RAILS_ENV:                      production
